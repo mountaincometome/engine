@@ -1,0 +1,23 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Isolated environments
+.env/
+.venv/
+env/
+venv/
+_venv/
+pypy/
+_pypy/
+
+# Source code editors
+.idea
+*~
+
+# Logging
+*.log
+*.log.*
+
+# PyTest results
+**.cache/
