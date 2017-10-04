@@ -1,5 +1,5 @@
 """
-mountaincometome:watcher:effectors
+mountaincometome:spy:effectors
 """
 
 from radiality import effect

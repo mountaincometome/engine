@@ -1,13 +1,13 @@
 """
-mountaincometome:watcher:main
+mountaincometome:spy:main
 """
 
 from radiality import Ring
 
-from core import Watcher
+from core import Spy
 
 
 if __name__ == '__main__':
-    Watcher().sensor('0.0.0.0', 50004).attract(
+    Spy().sensor('0.0.0.0', 50004).attract(
         Ring().cohere('0.0.0.0', 50000)
     ).arise()

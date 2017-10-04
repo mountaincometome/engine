@@ -18,12 +18,12 @@ class Configurator(Effector):
         )
 
 
-class Watcher(Effector):
+class Spy(Effector):
 
     @effect
     async def catching(self, i):
-        print('The [{0}] watcher try to catch something...'.format(i))
+        print('The [{0}] spy try to catch something...'.format(i))
 
     @effect
     async def catched(self, i):
-        print('The [{0}] watcher catched something'.format(i))
+        print('The [{0}] spy catched something'.format(i))

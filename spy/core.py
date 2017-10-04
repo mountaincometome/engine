@@ -1,5 +1,5 @@
 """
-mountaincometome:watcher:core
+mountaincometome:spy:core
 """
 
 import asyncio
@@ -10,9 +10,9 @@ import eventer
 import effectors
 
 
-class Watcher(eventer.Watcher, effectors.Configurator, effectors.Pulsar):
+class Spy(eventer.Spy, effectors.Configurator, effectors.Pulsar):
     """
-    The `Watcher` core
+    The `Spy` core
     """
     MAX_SLEEP_TIME = 5  # 5 sec
 
@@ -20,7 +20,7 @@ class Watcher(eventer.Watcher, effectors.Configurator, effectors.Pulsar):
 
     def __init__(self):
         """
-        self: Watcher
+        self: Spy
         """
         super().__init__()
 
@@ -28,10 +28,10 @@ class Watcher(eventer.Watcher, effectors.Configurator, effectors.Pulsar):
 
     def attract(self, ring):
         """
-        self: Watcher
+        self: Spy
         ring: radiality.Ring
 
-        return: Watcher
+        return: Spy
         """
         ring.focus(self)
 
@@ -39,7 +39,7 @@ class Watcher(eventer.Watcher, effectors.Configurator, effectors.Pulsar):
 
     def arise(self):
         """
-        self: Watcher
+        self: Spy
         """
         loop = asyncio.get_event_loop()
 

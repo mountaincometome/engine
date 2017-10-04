@@ -1,14 +1,14 @@
-# Mountain Come To Me
+# Mountain Come To Me: Engine
 
-The `mountaincometome` system.
+The back-end side of the `mountaincometome` system.
 
 ## Installing and running
 
-```
-$ git clone https://github.com/signaldetect/mountaincometome.git
-$ cd mountaincometome/
-$ . _cli/setup.sh
-$ . _cli/start.sh
+```sh
+git clone https://github.com/mountaincometome/engine.git
+cd engine/
+. _cli/setup.sh
+. _cli/start.sh
 ```
 
 After that check statuses of all subsystems via `$ . _cli/status.sh`.
@@ -17,27 +17,39 @@ After that check statuses of all subsystems via `$ . _cli/status.sh`.
 
 * start system:
 
-`$ . _cli/start.sh`
+```sh
+. _cli/start.sh`
+```
 
 * restart system:
 
-`$ . _cli/restart.sh`
+```sh
+. _cli/restart.sh`
+```
 
 * stop system:
 
-`$ . _cli/stop.sh`
+```sh
+. _cli/stop.sh`
+```
 
 * terminate system and `supervisor`:
 
-`$ . _cli/terminate.sh`
+```sh
+. _cli/terminate.sh`
+```
 
 * view status of system:
 
-`$ . _cli/status.sh`
+```sh
+. _cli/status.sh`
+```
 
 * install/upgrade dependencies:
 
-`$ . _cli/install.sh`
+```sh
+. _cli/install.sh`
+```
 
 ## Ports of subsystems
 
@@ -48,3 +60,7 @@ After that check statuses of all subsystems via `$ . _cli/status.sh`.
 * 50004 -- `watcher`
 * 50005 -- `marker`
 * 50006 -- `notifier`
+
+## License
+
+GPL v3
